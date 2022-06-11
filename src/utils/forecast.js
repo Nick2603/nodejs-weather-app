@@ -12,7 +12,7 @@ const forecast = (latitude, longitude, callback) => {
       } else {
         callback(
           undefined,
-          `It's currently ${data.current.temperature} degrees С and the weather is ${data.current.weather_descriptions[0]}!`
+          `Local time: ${data.location.localtime}. It's currently ${data.current.temperature} degrees С and the weather is ${data.current.weather_descriptions[0]}!`
         );
       }
     })
